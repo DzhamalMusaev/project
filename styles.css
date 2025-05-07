@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'TT', sans-serif;
+  }
+  
+  @font-face {
+    font-family: 'TT';
+    src: url('fonts/TTLakes-Medium.ttf');
+  }
+  
+  @font-face {
+    font-family: 'TTbold';
+    src: url('fonts/TTLakes-DemiBold.ttf');
+  }
+  
+  .sidebar {
+    width: 320px;
+    height: 1024px;
+    box-shadow: -2px 0 70px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 80px;
+    width: 97px;
+    height: 51px;
+  }
+  
+  .icon-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .sidebar__menu {
+    position: absolute;
+    padding-top: 120px;
+    padding-left: 24px;
+  }
+    
+  .sidebar__highlight {
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    border-radius: 10px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .menu li a {
+    font-family: TT;
+    text-decoration: none;
+    color: #1B1C21;
+    font-size: 16px;
+    transition: opacity 0.3s;
+  }
+  
+  .menu li a:hover {
+    opacity: 0.6;
+  }
+  
+  .sidebar__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+  }
+  
+  .footer__buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .email {
+    font-size: 16px;
+  }
+  
+  .phone {
+    font-size: 24px;
+    font-family: 'TTbold';
+  }
+  
+  .footer__language ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer__language button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #1B1C21;
+    cursor: pointer;
+  }
+  
+  .footer__language .active {
+    color: #7E7E82;
+  }
+  
